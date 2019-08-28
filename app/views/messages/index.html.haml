@@ -15,7 +15,8 @@
               = member.name
       .right-header
         .right-header__button
-          Edit
+          = link_to edit_group_path(@group), class: "right-header__button" do
+            Edit
     .messages
       = render @messages
 
